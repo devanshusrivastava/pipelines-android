@@ -30,14 +30,22 @@ android {
     }
 
     // If you need to add more flavors, consider using flavor dimensions.
-    productFlavors {
-        mock {
-            applicationIdSuffix = ".mock"
-        }
-        prod {
 
+    flavorDimensions "default"
+
+    // Define the product flavors and assign them to the dimension
+    productFlavors {
+        flavor1 {
+            dimension "default"
+            // Other configurations for flavor1
         }
+        flavor2 {
+            dimension "default"
+            // Other configurations for flavor2
+        }
+        // Add more flavors as needed
     }
+   
 
     // Remove mockRelease as it's not needed.
     android.variantFilter { variant ->
