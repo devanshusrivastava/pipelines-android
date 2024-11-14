@@ -26,16 +26,16 @@
         android:theme="@style/AppTheme">
         <activity
             android:name="com.microsoft.sample.tasks.TasksActivity"
-            android:theme="@style/AppTheme.OverlapSystemBar">
+            android:theme="@style/AppTheme.OverlapSystemBar" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.microsoft.sample.taskdetail.TaskDetailActivity" />
-        <activity android:name="com.microsoft.sample.addedittask.AddEditTaskActivity" />
+        <activity android:name="com.microsoft.sample.taskdetail.TaskDetailActivity" android:exported="true"/>
+        <activity android:name="com.microsoft.sample.addedittask.AddEditTaskActivity" android:exported="true"/>
         <activity
-            android:name="com.microsoft.sample.statistics.StatisticsActivity"
+            android:name="com.microsoft.sample.statistics.StatisticsActivity" android:exported="true"
             android:parentActivityName=".tasks.TasksActivity"
             tools:ignore="UnusedAttribute">
             <!-- Parent activity meta-data to support 4.0 and lower -->
