@@ -73,6 +73,7 @@ android {
  all versions in a single place. This improves readability and helps managing project complexity.
  */
 dependencies {
+    /*
     // App's dependencies, including test
     implementation 'androidx.appcompat:appcompat:1.6.0' 
     implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
@@ -109,4 +110,31 @@ dependencies {
     androidTestImplementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
     androidTestImplementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
     androidTestImplementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    */
+    // AndroidX Libraries
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Guava
+    implementation 'com.google.guava:guava:32.0.1-android' // Latest Guava for Android
+
+    // JUnit (for unit testing)
+    testImplementation 'junit:junit:4.13.2'
+
+    // Mockito (for mocking in tests)
+    testImplementation 'org.mockito:mockito-core:5.5.0'
+
+    // PowerMock (for advanced mocking)
+    testImplementation 'org.powermock:powermock-module-junit4:2.0.9'
+    testImplementation 'org.powermock:powermock-api-mockito2:2.0.9'
+
+    // Hamcrest (for assertions in tests)
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+
+    // Android testing libraries
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
