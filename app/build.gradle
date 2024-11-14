@@ -6,7 +6,7 @@ repositories {
 }
 
 android {
-    namespace 'com.example.android.architecture.blueprints.todomvp'
+    namespace 'com.microsoft.sample'
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
